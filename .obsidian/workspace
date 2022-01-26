@@ -1,0 +1,94 @@
+{
+  "main": {
+    "id": "6d428e33d249fe2c",
+    "type": "split",
+    "children": [
+      {
+        "id": "664c221a3a340eb9",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "05-virt-01-basics/README.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5302af88d61765d1",
+    "type": "split",
+    "children": [
+      {
+        "id": "ca13ad5794173239",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7551b7cecfa755d0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "0da3eed2af352fb7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ecd1b2ef98d9f599",
+    "type": "split",
+    "children": [
+      {
+        "id": "a3e0f1fe380eb46c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e79c7670595ba39f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "05-virt-01-basics/README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "664c221a3a340eb9",
+  "lastOpenFiles": [
+    "05-virt-01-basics/README.md",
+    "05-virt-02-control-systems/README.md"
+  ]
+}
