@@ -77,12 +77,12 @@ ansible 2.10.8
 docker ps
 ```
 **Скриншот запущенной ВМ**
-![](Pasted%20image%2020220128210704.png)
+![](assets/Pasted%20image%2020220128210704.png)
 
 **Скриншот успешной установки Docker**
-![](Pasted%20image%2020220128210951.png)
+![](assets/Pasted%20image%2020220128210951.png)
 
 **Cкриншот запуска контейнера "Hello-world" и вывод команды __'docker ps'__ **
-![](Pasted%20image%2020220128211457.png)
+![](assets/Pasted%20image%2020220128211457.png)
 
 
