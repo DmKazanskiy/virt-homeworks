@@ -1,5 +1,7 @@
 {
   "attachmentFolderPath": "./assets",
   "useMarkdownLinks": true,
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "legacyEditor": false,
+  "livePreview": false
 }
