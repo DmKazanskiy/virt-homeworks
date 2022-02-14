@@ -35,7 +35,7 @@
 
 ---
 ### Скриншот свойств созданной ВМ
-![assets](yc_image20220214161248.png)
+![](assets/yc_image20220214161248.png)
 
 
 ### Лог создания ВМ
@@ -169,7 +169,7 @@ internal_ip_address_node01_yandex_cloud = "192.168.101.23"
 ![](assets/yc_02.png)
 
 ### Скриншот готового компонента мониторинга
-![assets](yc_image20220214182108.png)
+![assets](assets/yc_image20220214182108.png)
 
 ### Список работающих docker-контейнеров
 ```
