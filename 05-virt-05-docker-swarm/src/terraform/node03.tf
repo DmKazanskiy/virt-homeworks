@@ -13,7 +13,7 @@ resource "yandex_compute_instance" "node03" {
     initialize_params {
       image_id    = "${var.centos-7-base}"
       name        = "root-node03"
-      type        = "network-nvme"
+      type        = "network-ssd"
       size        = "10"
     }
   }
