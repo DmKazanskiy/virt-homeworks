@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "06-db-01-basics/README.md",
-            "mode": "preview",
+            "mode": "source",
             "source": true
           }
         }
@@ -90,6 +90,8 @@
   "active": "664c221a3a340eb9",
   "lastOpenFiles": [
     "06-db-01-basics/README.md",
+    "06-db-01-basics/helpMe.md",
+    "Без названия.md",
     "05-virt-05-docker-swarm/README.md",
     "05-virt-04-docker-compose/README.md",
     "05-virt-03-docker/README.md",
