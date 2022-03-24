@@ -1,6 +1,10 @@
 # Домашнее задание к занятию "6.2. SQL"
 
 ## DOCKER-COMPOSE
+> 
+> Файлы `docker-compose.yaml` и `init-db-user-data-orders.sh` размещены в директории `./docker-compose` папки домашнего задания
+> 
+
 Решение Задач 1..4 приведено в `docker-compose.yaml` ниже:
 
 ```
@@ -24,7 +28,9 @@ services:
       - ./init-db-user-data-orders.sh:/docker-entrypoint-initdb.d/init-db.sh
        
 ```
-Соответствующий скрипт выполняет операции с БД PostgreSQL:
+
+Соответствующий скрипт `init-db-user-data-orders.sh` выполняет операции с БД PostgreSQL:
+
 ```
 #!/bin/bash
 set -e
