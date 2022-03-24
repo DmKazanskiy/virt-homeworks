@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:12
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./volume01:/var/lib/postgresql/data
+      #- ./volume02:/var/lib/postgresql/
+      - ./init-db-user-data-orders.sh:/docker-entrypoint-initdb.d/init-db.sh
