@@ -162,7 +162,7 @@ mysql> select count(*) from orders where price >300;
 
 > 
 > задание выполнено с помощью инструкции копирования [test-user-task2.sql](test-data/test-user-task2.sql) в директорию `docker-entrypoint-initdb.d` с именем `02.sql` при развертывании контейнера.
-> строка 24 [docker-compose файла](test_data/docker-compose.yml).
+> строка 24 [docker-compose файла](test_data/docker-compose.yml):
 > 
 
 ```
@@ -227,11 +227,13 @@ Records: 5  Duplicates: 0  Warnings: 0
 mysql> show profiles;
 | Query_ID | Duration   | Query                                                                                                                                                                                |       1  | 0.03997625 | ALTER TABLE orders ENGINE = MyISAM
 |       2  | 0.05256775 | ALTER TABLE orders ENGINE = InnoDB
+
 2 rows in set, 1 warning (0.00 sec)
 
 ```
 > 
 > Время переключения InnoDB -> MyISAM = 0.03997625
+> 
 > Время обратного переключения MyISAM -> InnoDB выше: 0.05256775
 > 
 
@@ -249,7 +251,7 @@ mysql> show profiles;
 **Приведите в ответе измененный файл `my.cnf`.**
 
 > 
-> задание выполнено с помощью инструкции копирования [my.cnf](/test_data/docker-etc/my.cnf)mp.sql в директорию `/etc/mysql/conf.d/` с именем `mysqld.cnf` при развертывании контейнера.
+> задание выполнено с помощью инструкции копирования [my.cnf](/test_data/docker-etc/my.cnf) в директорию `/etc/mysql/conf.d/` с именем `mysqld.cnf` при развертывании контейнера.
 > строка 22 [docker-compose файла](test_data/docker-compose.yml).
 
 ```
