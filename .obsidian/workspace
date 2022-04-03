@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "06-db-03-mysql/README.md",
+            "file": "06-db-04-postgresql/README.md",
             "mode": "source",
             "source": true
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "06-db-03-mysql/README.md",
+                "file": "06-db-04-postgresql/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "664c221a3a340eb9",
   "lastOpenFiles": [
+    "06-db-04-postgresql/README.md",
     "06-db-03-mysql/README.md",
+    "06-db-02-sql/README.md",
     "test-data/test-user-task2.sql.md",
     "06-db-03-mysql/links-useful.md",
     "05-virt-05-docker-swarm/README.md",
-    "06-db-02-sql/README.md",
     "05-virt-04-docker-compose/README.md",
     "05-virt-03-docker/README.md",
     "05-virt-02-iaac/README.md",
-    "05-virt-01-basics/README.md",
-    "06-db-01-basics/README.md"
+    "05-virt-01-basics/README.md"
   ]
 }
