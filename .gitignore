@@ -25,7 +25,7 @@
 *.log
 *.sql
 *.sqlite
-
+**/docker-db/*
 # OS generated files #
 ######################
 .DS_Store

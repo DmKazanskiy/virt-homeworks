@@ -1,0 +1,8 @@
+- [MySQL server и его настройка, тюнинг MySQL](https://server-gu.ru/mysql-tuning/)
+- [MySQL 5.7 Master-Slave Replication on CentOS 7](https://gist.github.com/fernandoaleman/948987b94a9cc827403f7cacab63d90f)
+- [Paging Through Results](https://use-the-index-luke.com/sql/partial-results/fetch-next-page)
+- [MySQL: уровни изоляции транзакций](https://habr.com/ru/post/135217/)
+- [Authentication Plugin - mysql_native_password](https://mariadb.com/kb/en/authentication-plugin-mysql_native_password/)
+- [How to Manage Connections Efficiently in Postgres, or Any Database](https://www.brandur.org/postgres-connections)
+- [Как работать с Postgres в Go: практики, особенности, нюансы](https://habr.com/ru/company/oleg-bunin/blog/461935/)
+- [Оптимизация MySQL - основные понятия](https://techart.ru/files/university/doc-40-1248356567.pdf)

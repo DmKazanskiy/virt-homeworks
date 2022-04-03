@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  # MySQL
+  database:
+    container_name: mysql8
+    image: mysql:8
+    cap_add:
+      - SYS_NICE
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_USER: 'test'
+      MYSQL_PASSWORD: 'test-pass'
+      MYSQL_DATABASE: test_db
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    ports:
+      - '3306:3306'
+    volumes:
+      - './docker-db:/var/lib/mysql'
+      - './docker-etc/my.cnf:/etc/mysql/conf.d/mysqld.cnf'
+      - './test_dump.sql:/docker-entrypoint-initdb.d/01.sql'
+      - './test-user-task2.sql:/docker-entrypoint-initdb.d/02.sql'
+
+      #- './test_dump.sql:/tmp/test_dump.sql'
+      #- './init-db-user-data.sh:/docker-entrypoint-initdb.d/init.sh'
+volumes:
+  docker-db:
