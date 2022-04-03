@@ -45,11 +45,10 @@ postgres=# \q
 
 Восстановите бэкап БД в `test_database`.
 > 
-> задание выполнено с помощью инструкции копирования `test-dump.sql` в директорию `docker-entrypoint-initdb.d` с именем `dump.sql` при развертывании контейнера.
+> задание выполнено с помощью инструкции копирования `test-dump.sql` в директорию `docker-entrypoint-initdb.d` с именем `dump.sql` при создании БД `POSTGRES_DB: test_database`, при развертывании контейнера.
 > 
-> строка 16 [docker-compose файла](test_data/docker-compose.yml).
+> строки 11, 16 [docker-compose файла](test_data/docker-compose.yml).
 > 
-
 
 Перейдите в управляющую консоль `psql` внутри контейнера.
 Подключитесь к восстановленной БД и проведите операцию ANALYZE для сбора статистики по таблице.
