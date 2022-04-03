@@ -255,7 +255,7 @@ mysql> show profiles;
 **Приведите в ответе измененный файл `my.cnf`.**
 
 > 
-> задание выполнено с помощью инструкции копирования [my.cnf](/test_data/docker-etc/my.cnf) в директорию `/etc/mysql/conf.d/` с именем `mysqld.cnf` при развертывании контейнера.
+> задание выполнено с помощью инструкции копирования [my.cnf](test_data/docker-etc/my.cnf) в директорию `/etc/mysql/conf.d/` с именем `mysqld.cnf` при развертывании контейнера.
 > 
 > строка 22 [docker-compose файла](test_data/docker-compose.yml).
 
