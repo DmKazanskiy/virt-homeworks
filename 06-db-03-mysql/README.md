@@ -162,7 +162,7 @@ mysql> select count(*) from orders where price >300;
 **Предоставьте привелегии пользователю `test` на операции SELECT базы `test_db`.**
 
 > 
-> задание выполнено с помощью инструкции копирования [test-user-task2.sql](test-data/test-user-task2.sql) в директорию `docker-entrypoint-initdb.d` с именем `02.sql` при развертывании контейнера.
+> задание выполнено с помощью инструкции копирования [test-user-task2.sql](test_data/test-user-task2.sql) в директорию `docker-entrypoint-initdb.d` с именем `02.sql` при развертывании контейнера.
 > 
 > строка 24 [docker-compose файла](test_data/docker-compose.yml):
 > 
