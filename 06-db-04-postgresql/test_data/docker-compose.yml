@@ -5,6 +5,7 @@ services:
   database:
     container_name: postgres_13
     image: postgres:13
+    restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -12,7 +13,7 @@ services:
     ports:
       - '5432:5432'
     volumes:
-      - ./db-data/:/var/lib/postgresql/data/
+      - ./db-data/:/var/lib/postgresql/data/:rw
       - ./test_dump.sql:/docker-entrypoint-initdb.d/dump.sql
 volumes:
   postgres:
