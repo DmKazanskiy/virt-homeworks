@@ -1,7 +1,6 @@
 Creating elasticsearch group... OK
 Creating elasticsearch user... OK
   Installing : elasticsearch-8.1.2-1.x86_64                                 1/1 
-Failed to get D-Bus connection: Operation not permitted
 --------------------------- Security autoconfiguration information ------------------------------
 
 Authentication and authorization are enabled.
