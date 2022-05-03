@@ -26,9 +26,23 @@
 Для этого в рамках совещания надо будет выяснить подробности о проекте, что бы в итоге определиться с инструментами:
 
 1. Какой тип инфраструктуры будем использовать для этого проекта: изменяемый или не изменяемый?
-1. Будет ли центральный сервер для управления инфраструктурой?
-1. Будут ли агенты на серверах?
-1. Будут ли использованы средства для управления конфигурацией или инициализации ресурсов? 
+>
+> оба варианта,так как систему необходимо развернуть + планируются частые релизы и доработка.
+> 
+
+2. Будет ли центральный сервер для управления инфраструктурой?
+>
+> я бы настаивал на отсутствии центрального сервера для управления инфраструктурой по причине необходимости частых изменений.
+> 
+
+3. Будут ли агенты на серверах?
+>
+> нет, агентов не будет - 
+
+4. Будут ли использованы средства для управления конфигурацией или инициализации ресурсов? 
+>
+> да, будут - необходимо иметь возможность оперативного управления конфигурацией и инициализации ресурсов.
+> 
  
 В связи с тем, что проект стартует уже сегодня, в рамках совещания надо будет определиться со всеми этими вопросами.
 
@@ -47,6 +61,16 @@
 
 Установите терраформ при помощи менеджера пакетов используемого в вашей операционной системе.
 В виде результата этой задачи приложите вывод команды `terraform --version`.
+> 
+```bash
+(base):~/.bin$ terraform --version
+Terraform v1.1.9
+on linux_amd64
+
+
+```
+>
+
 
 ## Задача 3. Поддержка легаси кода. 
 
@@ -57,6 +81,46 @@
 
 В виде результата этой задачи приложите вывод `--version` двух версий терраформа доступных на вашем компьютере 
 или виртуальной машине.
+
+>
+> [установил CLI tool для переключения между версиями Терраформ](https://warrensbox.medium.com/how-to-manage-different-terraform-versions-for-each-project-51cca80ccece)
+> 
+```bash
+curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh | sudo bash
+
+```
+```bash
+:~$ sudo tfswitch 
+Creating directory for terraform binary at: /home/arcdm/.terraform.versions
+Use the arrow keys to navigate: ↓ ↑ → ← 
+? Select Terraform version: 
+↑   0.13.1
+    0.13.0
+    0.12.31
+    0.12.30
+↓ ▸ 0.12.29
+
+```
+
+```bash
+(base):~/.bin$ ./tfswitch 0.12.31
+Installing terraform at /home/arcdm/bin
+Switched terraform to version "0.12.31" 
+(base):~/.bin$ ~/bin/terraform  -v
+Terraform v0.12.31
+Your version of Terraform is out of date! The latest version
+is 1.1.9. You can update by downloading from https://www.terraform.io/downloads.html
+
+(base):~/.bin$ ./tfswitch 0.13.7
+Installing terraform at /home/arcdm/bin
+Switched terraform to version "0.13.7" 
+(base):~/.bin$ ~/bin/terraform  -v
+Terraform v0.13.7
+
+Your version of Terraform is out of date! The latest version
+is 1.1.9. You can update by downloading from https://www.terraform.io/downloads.html
+
+```
 
 ---
 
