@@ -191,7 +191,7 @@ Terraform will perform the following actions:
 
   # aws_instance.ec2-cloud[0] will be created
   + resource "aws_instance" "ec2-cloud" {
-      + ami                                  = "ami-002068ed284fb165b"
+      + ami                                  = "ami-09439f09c55136ecf"
       + get_password_data                    = false
       + instance_type                        = "t2.micro"
       + source_dest_check                    = true
@@ -207,7 +207,7 @@ Terraform will perform the following actions:
 
   # aws_instance.ec2-cloud[1] will be created
   + resource "aws_instance" "ec2-cloud" {
-      + ami                                  = "ami-002068ed284fb165b"
+      + ami                                  = "ami-09439f09c55136ecf"
       + get_password_data                    = false
       + instance_type                        = "t2.micro"
       + tags                                 = {
