@@ -3,17 +3,17 @@ locals {
   env = {
     default = {
       instance_type  = "t2.micro"
-      ami            = "ami-0ff8a91507f77f867"
+      ami            = "ami-09439f09c55136ecf"
       instance_count = 1
       }
     stage = {
       instance_type  = "t2.micro"
-      ami            = "ami-0c55b159cbfafe1f0"
+      ami            = "ami-09439f09c55136ecf"
       instance_count = 1
     }
     prod = {
       instance_type  = "t2.micro"
-      ami            = "ami-002068ed284fb165b"
+      ami            = "ami-09439f09c55136ecf"
       instance_count = 2
     }
   }

@@ -10,5 +10,5 @@ terraform {
   encrypt        = true
   }
 }
-/**/
+
 /* comment this up-instuctions before destroy IAC */
