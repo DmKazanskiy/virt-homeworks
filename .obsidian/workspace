@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "07-terraform-02-syntax/README.md",
-            "mode": "source",
+            "file": "07-terraform-03-basic/README.md",
+            "mode": "preview",
             "source": true
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "07-terraform-02-syntax/README.md",
+                "file": "07-terraform-03-basic/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,10 +89,10 @@
   },
   "active": "664c221a3a340eb9",
   "lastOpenFiles": [
-    "07-terraform-02-syntax/README.md",
     "07-terraform-03-basic/README.md",
-    "05-virt-04-docker-compose/README.md",
     "07-terraform-01-intro/README.md",
+    "07-terraform-02-syntax/README.md",
+    "05-virt-04-docker-compose/README.md",
     "07-terraform-02-syntax/assets/yc_provider_setup_20220523211434.png",
     "07-terraform-02-syntax/terraform/main.tf.md",
     "07-terraform-04-teamwork/README.md",
