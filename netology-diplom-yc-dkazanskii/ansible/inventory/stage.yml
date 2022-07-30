@@ -1,0 +1,52 @@
+---
+nginx_install:
+  hosts:
+    nginx:
+      ansible_ssh_common_args: '-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
+      ansible_user: "ubuntu"
+      ansible_host: 51.250.88.169
+      letsencrypt_email: "dmkazanskii@yandex.ru"
+      domain_name: "netology.space"
+
+mysql:
+  hosts:
+    db01:
+      ansible_ssh_common_args: '-o ProxyCommand="ssh -i ~/.ssh/netology.space -o StrictHostKeyChecking=no -W %h:%p ubuntu@51.250.88.169"'
+      ansible_user: "ubuntu"
+      ansible_host: 192.168.10.25
+      mysql_server_id: 1
+      mysql_replication_role: master
+    db02:
+      ansible_ssh_common_args: '-o ProxyCommand="ssh -i ~/.ssh/netology.space -o StrictHostKeyChecking=no -W %h:%p ubuntu@51.250.88.169"'
+      ansible_user: "ubuntu"
+      ansible_host: 192.168.10.29
+      mysql_server_id: 2 
+      mysql_replication_role: slave
+wordpress_install:
+  hosts:
+    app:
+      ansible_ssh_common_args: '-o ProxyCommand="ssh -i ~/.ssh/netology.space -o StrictHostKeyChecking=no -W %h:%p ubuntu@51.250.88.169"'
+      ansible_user: "ubuntu"
+      ansible_host: 192.168.10.19
+gitlab_install:
+  hosts:
+    gitlab:
+      ansible_ssh_common_args: '-o ProxyCommand="ssh -i ~/.ssh/netology.space -o StrictHostKeyChecking=no -W %h:%p ubuntu@51.250.88.169"'
+      ansible_user: "ubuntu"
+      ansible_host: 192.168.10.23
+runner_install:
+  hosts:
+    runner:
+      ansible_ssh_common_args: '-o ProxyCommand="ssh -i ~/.ssh/netology.space -o StrictHostKeyChecking=no -W %h:%p ubuntu@51.250.88.169"'
+      ansible_user: "ubuntu"
+      ansible_host: 192.168.10.11
+monitoring_install:
+  hosts:
+    monitoring:
+      ansible_ssh_common_args: '-o ProxyCommand="ssh -i ~/.ssh/netology.space -o StrictHostKeyChecking=no -W %h:%p ubuntu@51.250.88.169"'
+      ansible_user: "ubuntu"
+      ansible_host: 192.168.10.22
+    nodeexporter:
+      ansible_ssh_common_args: '-o ProxyCommand="ssh -i ~/.ssh/netology.space -o StrictHostKeyChecking=no -W %h:%p ubuntu@51.250.88.169"'
+      ansible_user: "ubuntu"
+      ansible_host: 192.168.10.22

@@ -1,0 +1,18 @@
+- hosts: runner
+  gather_facts: True
+  become:
+    true
+  become_method:
+    sudo
+  become_user:
+    root
+  remote_user:
+    ubuntu
+
+  roles:
+   - gitlab-runner
+
+
+  environment:
+     http_proxy: http://netology.space:8118
+     https_proxy: http://netology.space:8118

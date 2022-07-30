@@ -1,0 +1,22 @@
+---
+#nginx
+ssh -i ~/.ssh/netology.space ubuntu@51.250.88.169
+    
+#db01
+ssh -i ~/.ssh/netology.space -o "ProxyCommand ssh -i ~/.ssh/netology.space -W %h:%p ubuntu@51.250.88.169" ubuntu@192.168.10.25
+    
+#db02:
+ssh -i ~/.ssh/netology.space -o "ProxyCommand ssh -i ~/.ssh/netology.space -W %h:%p ubuntu@51.250.88.169" ubuntu@192.168.10.29
+    
+#wordpress-install:
+#app:
+ssh -i ~/.ssh/netology.space -o "ProxyCommand ssh -i ~/.ssh/netology.space -W %h:%p ubuntu@51.250.88.169" ubuntu@192.168.10.19
+
+#gitlab:
+ssh -i ~/.ssh/netology.space -o "ProxyCommand ssh -i ~/.ssh/netology.space -W %h:%p ubuntu@51.250.88.169" ubuntu@192.168.10.23
+
+#runner:
+ssh -i ~/.ssh/netology.space -o "ProxyCommand ssh -i ~/.ssh/netology.space -W %h:%p ubuntu@51.250.88.169" ubuntu@192.168.10.11
+
+#monitoring:
+ssh -i ~/.ssh/netology.space -o "ProxyCommand ssh -i ~/.ssh/netology.space -W %h:%p ubuntu@51.250.88.169" ubuntu@192.168.10.22

@@ -1,0 +1,69 @@
+- hosts: nodeexporter
+  gather_facts: True
+  become:
+    true
+  become_method:
+    sudo
+  become_user:
+    root
+  remote_user:
+    ubuntu
+  roles:
+    - install_node_exporter
+
+- hosts: gitlab 
+  gather_facts: True
+  become:
+    true
+  become_method:
+    sudo
+  become_user:
+    root
+  remote_user:
+    ubuntu
+  roles:
+    - install_node_exporter
+
+- hosts: mysql
+  gather_facts: True
+  become:
+    true
+  become_method:
+    sudo
+  become_user:
+    root
+  remote_user:
+    ubuntu
+  roles:
+    - install_node_exporter
+
+- hosts: runner
+  gather_facts: True
+  become:
+    true
+  become_method:
+    sudo
+  become_user:
+    root
+  remote_user:
+    ubuntu
+  roles:
+    - install_node_exporter
+
+- hosts: app
+  gather_facts: True
+  become:
+    true
+  become_method:
+    sudo
+  become_user:
+    root
+  remote_user:
+    ubuntu
+  roles:
+    - install_node_exporter
+
+
+  environment:
+     http_proxy: http://netology.space:8118
+     https_proxy: http://netology.space:8118

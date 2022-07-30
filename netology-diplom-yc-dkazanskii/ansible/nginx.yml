@@ -1,0 +1,14 @@
+- hosts: nginx
+  gather_facts: True
+  become:
+    true
+  become_method:
+    sudo
+  become_user:
+    root
+  remote_user:
+    ubuntu
+  roles:
+    - install_nginx_letsencrypt
+    - install_proxy
+    - install_node_exporter

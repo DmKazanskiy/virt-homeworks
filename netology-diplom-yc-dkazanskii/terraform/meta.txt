@@ -1,0 +1,9 @@
+#cloud-config
+users:
+  - name: ubuntu
+    groups: sudo
+    serial-port-enable: 1
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDQpEhoRnrVa59yOU95inWQHzgb1hlC/g9WxluOaSWcVSav348q4Mt63fCHpDhARR9ow0SkkNELVLZVFY8jy0QnEPQKt0OWOYGJui/BdP4keHs5vniWiAp7KGRhFFyu5/MHQM31gMsfmMptsIFNtby2IWNOl1AXbz7TzpukR59AW7+NHJLF854ENvC0hKDXmIdZtgv73zEIvp+mDdZY3palbZAF8XKWGJidIzytZ4kuNkaS0wnMDLHoBkUUJXTnAY8GQo9r0GRSmU5RHCnmDAq7jRnkoGqoarVD8XA+ukfSHYwOwyftb40QkKSUD6jQjrO0v8QGqzFGsx8xkeIaUy6DgpJx29lHoCOJSElQfL5awPdIw4DQT4sz/W3w3f7B8vEqjza0PuEYaygzDFppnrvSSCAM4W6ukQ058009Q3V2dFWk8oyVv0wzl0Fj3BKoMEYDgEoEG9HuBUVoFTSE9Cwu5p27klDBq45wbDZYjEXBeSD/pITSp+vwFY7hZMDBzX8= dmkazanskii@yandex.ru

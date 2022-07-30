@@ -69,7 +69,9 @@ override.tf.json
 # example: *tfplan*
 
 # Ignore CLI configuration files
-.terraformrc
+#.terraformrc
 terraform.rc
 .terraform.lock*
 key.json
+netology-space-devops.json
+netology-space-static-key.json

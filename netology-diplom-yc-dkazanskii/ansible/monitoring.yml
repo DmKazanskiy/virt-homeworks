@@ -1,0 +1,17 @@
+- hosts: monitoring
+  gather_facts: True
+  become:
+    true
+  become_method:
+    sudo
+  become_user:
+    root
+  remote_user:
+    ubuntu
+  roles:
+   - monitoring
+   - grafana
+
+  environment:
+     http_proxy: http://netology.space:8118
+     https_proxy: http://netology.space:8118
