@@ -877,11 +877,14 @@ runner : ok=16   changed=7    unreachable=0    failed=0    skipped=16   rescued=
 ##  Используемые статьи
 
 [# Gitlan role ansible](https://github.com/geerlingguy/ansible-role-gitlab)
+
 ```
 ogin: root
 asswd: 5iveL!fe
 ```
+
 [# How To Set Up a Continuous Deployment Pipeline with GitLab CI/CD on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-continuous-deployment-pipeline-with-gitlab-ci-cd-on-ubuntu-18-04)
+
 [# MySQL Show User Privileges](https://phoenixnap.com/kb/mysql-show-user-privileges)
 [riemers/ansible-gitlab-runner](https://github.com/riemers/ansible-gitlab-runner)
 
